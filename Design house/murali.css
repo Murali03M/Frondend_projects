@@ -1,0 +1,115 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+.banner 
+{
+    height: 100vh;
+    width: 100%; 
+    background-color: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75));
+    background-image:url("photo.jpg");
+    /* height: auto;
+    width: auto;
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)); */
+     background-size: cover;
+     background-position:center;
+
+
+     
+}
+.navbar
+{
+    width: 84%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo
+{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+
+     list-style: none;
+     display: inline-block;
+     margin : 0 20px;
+     position: relative;
+}
+.navbar ul li a{
+  
+     text-decoration: none;
+     color:blue;
+     text-transform: uppercase;
+
+
+}
+.navbar ul li::after
+{
+    content:'';
+    height: 3px;
+    width: 0;
+    background-color:#009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+
+}
+.navbar ul li:hover:after
+{
+    width: 100%;
+}
+.content
+{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translatex(-50%);
+    text-align: center;
+    color: rgb(17, 0, 255);
+
+}
+ .content h1{
+     font-size: 70px;
+     margin-top: 80px;
+ }
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+
+}
+
+button
+{
+    width: 200px;
+    padding: 150px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius:  25px;
+    font-weight: bold;
+    border: 2px #009688;
+    background: transparent;
+    color: blue;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span
+{
+    background: #009688;
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
